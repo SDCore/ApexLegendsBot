@@ -20,8 +20,8 @@ async function submissionStart(post) {
 		var now = new Date();
 		if (
 			now.getDay() === 1 &&
-			now.getHours() === 13 &&
-			now.getMinutes() === 49
+			now.getHours() === 12 &&
+			now.getMinutes() === 00
 		)
 			mondayPost();
 		if (
