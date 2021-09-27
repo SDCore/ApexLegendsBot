@@ -151,14 +151,14 @@ async function submissionStart(post) {
 			const randomDrop = Math.floor(Math.random() * drops.length);
 
 			var ThursdayPost = {
-				title: `Landing Spot Thursday: ${
-					drops[randomDrop]
-				} | ${moment().format(`MMMM DD YYYY`)}`,
-				text: dedent(`Welcome to Landing Spot Thursday! This thread is your place for specific discussion for today's randomly chosen landing spot or map area.\n
-              Today's Landing Spot discussion is focused around: **${drops[randomDrop]}**!\n
-              Discuss what you like or dislike about this landing spot; advantages or disadvantages of the location; how it compares to other spots; where to go after hitting this spot; the loot table; fun dev surprises hidden around the area; or anything else you think would be of value to discuss regarding ${drops[randomDrop]}\n
-              Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
-              \n---\nGot any feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends) with any valid suggestions and feedback!`),
+				title: `Arena Mode Thursday | ${moment().format(
+					`MMMM DD YYYY`
+				)}`,
+				text: dedent(`Welcome to Arena Mode Thursday! This thread is your place for specific discussion regarding Arena Mode.\n
+                Discuss what you like or dislike about this Arena mode; advantages or disadvantages of certain legends in this mode; how it compares to Battle Royale; your favorite loadouts to use; the different maps, or anything else you think would be of value to discuss regarding Arena Mode.\n
+                \n
+                Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
+                \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
 				sendReplies: false,
 			};
 
@@ -174,9 +174,9 @@ async function submissionStart(post) {
 				.catch((e) => console.log(`Error on posting ${e}`));
 
 			console.log(
-				`Successfully posted Landing Thursday at: ${moment().format(
-					`MMMM Do YYYY, h:mm:ss a`
-				)}`
+				`${moment().format(
+					`h:mm:ss a`
+				)}] Successfully posted Arena Mode Thursday`
 			);
 		}
 
@@ -216,9 +216,9 @@ async function submissionStart(post) {
 				.catch((e) => console.log(`Error on posting ${e}`));
 
 			console.log(
-				`Successfully posted Free Talk Friday at: ${moment().format(
-					`MMMM Do YYYY, h:mm:ss a`
-				)}`
+				`${moment().format(
+					`h:mm:ss a`
+				)}] Successfully posted Free Talk Friday`
 			);
 		}
 
