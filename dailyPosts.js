@@ -20,31 +20,31 @@ async function submissionStart(post) {
 		var now = new Date();
 		if (
 			now.getDay() === 1 &&
-			now.getHours() === 10 &&
+			now.getHours() === 8 &&
 			now.getMinutes() === 00
 		)
 			mondayPost();
 		if (
 			now.getDay() === 2 &&
-			now.getHours() === 10 &&
+			now.getHours() === 8 &&
 			now.getMinutes() === 00
 		)
 			tuesdayPost();
 		if (
 			now.getDay() === 3 &&
-			now.getHours() === 10 &&
+			now.getHours() === 8 &&
 			now.getMinutes() === 00
 		)
 			wednesdayPost();
 		if (
 			now.getDay() === 4 &&
-			now.getHours() === 10 &&
+			now.getHours() === 8 &&
 			now.getMinutes() === 00
 		)
 			thursdayPost();
 		if (
 			now.getDay() === 5 &&
-			now.getHours() === 10 &&
+			now.getHours() === 8 &&
 			now.getMinutes() === 00
 		)
 			fridayPost();
