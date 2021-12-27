@@ -56,7 +56,7 @@ async function submissionStart(post) {
 			var MondayPost = {
 				title: `Legend Monday: ${
 					legends[randomLegend]
-				} | ${moment().format(`MMMM DD YYYY`)}`,
+				} | ${moment().format(`MMMM Do, YYYY`)}`,
 				text: dedent(`Welcome to Legend Monday! This discussion thread focuses specifically on a randomly chosen legend.\n
             Today's Legend discussion is focused around: **${legends[randomLegend]}**!\n
             Discuss what you like or dislike about this Legend; how it compares to others; playstyle tips and techniques; or anything else that you think would be of value to discuss regarding **${legends[randomLegend]}**.\n
@@ -86,7 +86,7 @@ async function submissionStart(post) {
 		async function tuesdayPost() {
 			var TuesdayPost = {
 				title: `Game and Update Discussion | ${moment().format(
-					`MMMM DD YYYY`
+					`MMMM Do, YYYY`
 				)}`,
 				text: dedent(`Welcome to the Tuesday **Game and Update Discussion thread!** This thread is your place for specific discussion on any recent development updates and general thoughts on the state of the game.\n
             Discuss what you like or dislike about recent updates, any flaws or features you would like to see in-game, your thoughts on the game's current state and meta, and more! *Please note that this thread will be unstickied if there is an update released and all discussion of the update will be redirected to the megathread for that day*\n
@@ -119,7 +119,7 @@ async function submissionStart(post) {
 			var WednesdayPost = {
 				title: `Weapon Wednesday: ${
 					guns[randomGun]
-				} | ${moment().format(`MMMM DD YYYY`)}`,
+				} | ${moment().format(`MMMM Do, YYYY`)}`,
 				text: dedent(`Welcome to **Weapon Wednesday!** This discussion thread focuses specifically on a randomly chosen weapon.\n
             Today's Weapon discussion is focused around: **${guns[randomGun]}**!\n
             Discuss what you like or dislike about this weapon; how it compares to other weapons; your favorite skins; changes that you think would be beneficial; or anything else that you think would be of value to discuss regarding the **${guns[randomGun]}**.\n
@@ -152,7 +152,7 @@ async function submissionStart(post) {
 
 			var ThursdayPost = {
 				title: `Arena Mode Thursday | ${moment().format(
-					`MMMM DD YYYY`
+					`MMMM Do, YYYY`
 				)}`,
 				text: dedent(`Welcome to Arena Mode Thursday! This thread is your place for specific discussion regarding Arena Mode.\n
                 Discuss what you like or dislike about this Arena mode; advantages or disadvantages of certain legends in this mode; how it compares to Battle Royale; your favorite loadouts to use; the different maps, or anything else you think would be of value to discuss regarding Arena Mode.\n
@@ -182,7 +182,9 @@ async function submissionStart(post) {
 
 		async function fridayPost() {
 			var FridayPost = {
-				title: `Free Talk Weekend | ${moment().format(`MMMM DD YYYY`)}`,
+				title: `Free Talk Weekend | ${moment().format(
+					`MMMM Do, YYYY`
+				)}`,
 				text: dedent(`Welcome to **Free Talk** Weekend! There are no specific discussion topics for Weekends. As such, moderation is more relaxed regarding specific and content within the thread. 
 
             What's on your mind? How's your week in Apex? How have your Apex games been going lately? Want to show off your stats or banners? Need some help or want to give out some pointers? Anything you want to talk about that wasn't brought up in a previous thread or did you miss a specific discussion topic earlier this week? Talk about it here!
