@@ -151,10 +151,10 @@ async function submissionStart(post) {
 			const randomDrop = Math.floor(Math.random() * drops.length);
 
 			var ThursdayPost = {
-				title: `Control LTM Thursday | ${moment().format(
+				title: `Apex Legends Mobile Thursday | ${moment().format(
 					`MMMM Do, YYYY`
 				)}`,
-				text: dedent(`Welcome to our temporary Control LTM Thursday! For the first 3 weeks of **Apex Legends: Defiance**, we'll be running this thread every thursday as a way to gather feadback on the Control LTM. What are your thoughts? Improvements? Favourite moments? Would this gamemode be able to stand as a permanant mode? How does it compare to Battle Royale or Arenas? What are your favourite locations to play in, or favourite loadouts to use? Discuss it all here!\n
+				text: dedent(`Welcome to our temporary Apex Legends Mobile ~~Monday~~ Thursday! This week, this thread will be on Thursday, but starting next Monday, We will replace Legend Monday with Apex Legends Mobile Monday, and move Legend Monday to Legend Thursday This is temporary as we move around/figure out some changes to our weekly discussion threads. Discuss the mobile version of Apex, show off gameplay, banners, tips and tricks, and whatever else you want related to Apex Legends Mobile!\n
                 \n
                 Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
                 \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
