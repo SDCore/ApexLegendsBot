@@ -54,14 +54,13 @@ async function submissionStart(post) {
 			const randomLegend = Math.floor(Math.random() * legends.length);
 
 			var MondayPost = {
-				title: `Legend Monday: ${
-					legends[randomLegend]
-				} | ${moment().format(`MMMM Do, YYYY`)}`,
-				text: dedent(`Welcome to Legend Monday! This discussion thread focuses specifically on a randomly chosen legend.\n
-            Today's Legend discussion is focused around: **${legends[randomLegend]}**!\n
-            Discuss what you like or dislike about this Legend; how it compares to others; playstyle tips and techniques; or anything else that you think would be of value to discuss regarding **${legends[randomLegend]}**.\n
-            Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
-            \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
+				title: `Apex Legends Mobile Monday | ${moment().format(
+					`MMMM Do, YYYY`
+				)}`,
+				text: dedent(`Welcome to our temporary Apex Legends Mobile ~~Monday~~ Thursday! This week, this thread will be on Thursday, but starting next Monday, We will replace Legend Monday with Apex Legends Mobile Monday, and move Legend Monday to Legend Thursday This is temporary as we move around/figure out some changes to our weekly discussion threads. Discuss the mobile version of Apex, show off gameplay, banners, tips and tricks, and whatever else you want related to Apex Legends Mobile!\n
+                \n
+                Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
+                \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
 				sendReplies: false,
 			};
 
@@ -151,11 +150,12 @@ async function submissionStart(post) {
 			const randomDrop = Math.floor(Math.random() * drops.length);
 
 			var ThursdayPost = {
-				title: `Apex Legends Mobile Thursday | ${moment().format(
-					`MMMM Do, YYYY`
-				)}`,
-				text: dedent(`Welcome to our temporary Apex Legends Mobile ~~Monday~~ Thursday! This week, this thread will be on Thursday, but starting next Monday, We will replace Legend Monday with Apex Legends Mobile Monday, and move Legend Monday to Legend Thursday This is temporary as we move around/figure out some changes to our weekly discussion threads. Discuss the mobile version of Apex, show off gameplay, banners, tips and tricks, and whatever else you want related to Apex Legends Mobile!\n
-                \n
+				title: `Legend Thursday: : ${
+					legends[randomLegend]
+				} | ${moment().format(`MMMM Do, YYYY`)}`,
+				text: dedent(`Welcome to Legend Thursday! This discussion thread focuses specifically on a randomly chosen legend.\n
+                Today's Legend discussion is focused around: **${legends[randomLegend]}**!\n
+                Discuss what you like or dislike about this Legend; how it compares to others; playstyle tips and techniques; or anything else that you think would be of value to discuss regarding **${legends[randomLegend]}**.\n
                 Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
                 \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
 				sendReplies: false,
