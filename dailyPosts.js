@@ -151,11 +151,11 @@ async function submissionStart(post) {
 			const randomDrop = Math.floor(Math.random() * drops.length);
 
 			var ThursdayPost = {
-				title: `Banner Showoff Thursday | ${moment().format(
+				title: `Ranked Mode Thursday | ${moment().format(
 					`MMMM Do, YYYY`
 				)}`,
-				text: dedent(`Welcome to Banner Showoff Thursday! Show off your banners, match results screenshots, and anything involving in-game stats.\n
-                Whether you want to flex your highest kills and damage, or just wanna show off a personal milestone, this is the place to do it. Please keep in mind, however, that everyone is at different skill levels, and what may seem simple and easy to achieve for you might be hard for someone else new to FPS games or different input schemes. We ask everyone to be respectful to each other regardless of the differences.\n
+				text: dedent(`Welcome to Ranked Mode Thursday! Discuss everything Battle Royale and Arenas ranked. Tips, tricks, and more available in this thread!\n
+                With the [major updates to Battle Royale ranked in Season 13](https://www.reddit.com/r/apexlegends/comments/uibghv/apex_legends_ranked_reloaded_full_breakdown_of/), this is the place to discuss your thoughts after seeing them live in game. Does it feel better? Is it more or less rewarding? Do you think you're playing against others of similar skill? Share your thoughts and observations in the comments!\nWe also encourage you to discuss Arenas ranked. While there were no major updates to it this season, use this as a place to discuss feedback on what could be changed or improved to make ranked arenas more rewarding and enjoyable.\n
                 Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
                 \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
 				sendReplies: false,
