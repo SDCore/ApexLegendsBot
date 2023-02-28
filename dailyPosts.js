@@ -85,7 +85,7 @@ async function submissionStart(post) {
 
 		async function tuesdayPost() {
 			var TuesdayPost = {
-				title: `Game and Update Discussion | ${moment().format(
+				title: `Game/Update Discussion | ${moment().format(
 					`MMMM Do, YYYY`
 				)}`,
 				text: dedent(`Welcome to the Tuesday **Game and Update Discussion thread!** This thread is your place for specific discussion on any recent development updates and general thoughts on the state of the game.\n
