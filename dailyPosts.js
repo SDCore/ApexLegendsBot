@@ -151,11 +151,9 @@ async function submissionStart(post) {
 			const randomDrop = Math.floor(Math.random() * drops.length);
 
 			var ThursdayPost = {
-				title: `Ranked Mode Thursday | ${moment().format(
-					`MMMM Do, YYYY`
-				)}`,
-				text: dedent(`Welcome to Ranked Mode Thursday! Discuss everything Battle Royale and Arenas ranked. Tips, tricks, and more available in this thread!\n
-                With the [major updates to Battle Royale ranked in Season 13](https://www.reddit.com/r/apexlegends/comments/uibghv/apex_legends_ranked_reloaded_full_breakdown_of/), this is the place to discuss your thoughts after seeing them live in game. Does it feel better? Is it more or less rewarding? Do you think you're playing against others of similar skill? Share your thoughts and observations in the comments!\nWe also encourage you to discuss Arenas ranked. While there were no major updates to it this season, use this as a place to discuss feedback on what could be changed or improved to make ranked arenas more rewarding and enjoyable.\n
+				title: `Mixtape Thursday | ${moment().format(`MMMM Do, YYYY`)}`,
+				text: dedent(`Welcome to Mixtape Thursday! Discuss everything Mixtape. Tips, tricks, and more available in this thread!\n
+                With Apex Legends: Revelry, [Respawn announced Mixtape](https://www.ea.com/games/apex-legends/news/revelry-season-game-updates), a rotating list of Gun Run, Control, and the new mode Team Deathmatch. Use this thread to discuss Mixtape as a whole, and the individual modes. What could be improved for Mixtape? Longer times for each rotation? Different maps? Maybe you'd like to see different gamemodes in Mixtape? Discuss it all here!\n
                 Moderation in daily threads is more relaxed, but please stay on topic, be respectful of others and remember our [rules](https://www.reddit.com/r/apexlegends/wiki/rules)\n
                 \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
 				sendReplies: false,
