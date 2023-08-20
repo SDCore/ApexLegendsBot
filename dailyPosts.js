@@ -1,4 +1,3 @@
-const config = require("./config.json");
 const legends = require("./data/legends.json");
 const guns = require("./data/guns.json");
 const drops = require("./data/drops.json");
@@ -6,13 +5,16 @@ const snoowrap = require("snoowrap");
 const fs = require("fs");
 const moment = require("moment");
 const dedent = require("dedent-js");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const r = new snoowrap({
-	userAgent: `${config["reddit"]["userAgent"]}`,
-	clientId: `${config["reddit"]["clientId"]}`,
-	clientSecret: `${config["reddit"]["clientSecret"]}`,
-	username: `${config["reddit"]["username"]}`,
-	password: `${config["reddit"]["password"]}`,
+	userAgent: process.env.USER_AGENT,
+	clientId: process.env.CLIENT_ID,
+	clientSecret: process.env.CLIENT_SECRET,
+	username: process.env.USERNAME,
+	password: process.env.PASSWORD,
 });
 
 async function submissionStart(post) {
@@ -65,7 +67,7 @@ async function submissionStart(post) {
 				sendReplies: false,
 			};
 
-			r.getSubreddit(config["reddit"]["subreddit"])
+			r.getSubreddit(process.env.SUBREDDIT)
 				.submitSelfpost({
 					title: MondayPost.title,
 					text: MondayPost.text,
@@ -94,7 +96,7 @@ async function submissionStart(post) {
             \n---\nSuggestions or feedback for these daily posts? Message [Modmail](https://www.reddit.com/message/compose?to=%2Fr%2Fapexlegends)!`),
 				sendReplies: false,
 			};
-			r.getSubreddit(config["reddit"]["subreddit"])
+			r.getSubreddit(process.env.SUBREDDIT)
 				.submitSelfpost({
 					title: TuesdayPost.title,
 					text: TuesdayPost.text,
@@ -128,7 +130,7 @@ async function submissionStart(post) {
 				sendReplies: false,
 			};
 
-			r.getSubreddit(config["reddit"]["subreddit"])
+			r.getSubreddit(process.env.SUBREDDIT)
 				.submitSelfpost({
 					title: WednesdayPost.title,
 					text: WednesdayPost.text,
@@ -159,7 +161,7 @@ async function submissionStart(post) {
 				sendReplies: false,
 			};
 
-			r.getSubreddit(config["reddit"]["subreddit"])
+			r.getSubreddit(process.env.SUBREDDIT)
 				.submitSelfpost({
 					title: ThursdayPost.title,
 					text: ThursdayPost.text,
@@ -203,7 +205,7 @@ async function submissionStart(post) {
 				sendReplies: false,
 			};
 
-			r.getSubreddit(config["reddit"]["subreddit"])
+			r.getSubreddit(process.env.SUBREDDIT)
 				.submitSelfpost({
 					title: FridayPost.title,
 					text: FridayPost.text,
