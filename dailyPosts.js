@@ -1,11 +1,11 @@
-const legends = require("./data/legends.json");
-const guns = require("./data/guns.json");
-const drops = require("./data/drops.json");
-const snoowrap = require("snoowrap");
-const fs = require("fs");
+const dotenv = require("dotenv");
 const moment = require("moment");
 const dedent = require("dedent-js");
-const dotenv = require("dotenv");
+const snoowrap = require("snoowrap");
+
+const guns = require("./data/guns.json");
+const legends = require("./data/legends.json");
+const drops = require("./data/drops/drops_s19.json");
 
 dotenv.config();
 
